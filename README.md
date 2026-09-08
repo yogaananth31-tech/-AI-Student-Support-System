@@ -11,18 +11,15 @@ The system combines Large Language Models (LLMs) with autonomous agent framework
 *  Automatically sets study reminders, schedules dynamic study sessions, and updates assignment progress.
 * **Personalized Learning Guidance:**
 * Analyzes student performance to recommend targeted study materials, practice problems, or learning paths.
-* **Multi-Modal Interaction:** Supports voice inputs, document uploads (e.g., grading feedback or assignments), and text chat.
-
-**Technology Stack**
-
-| Component | Recommended Technologies |
-| --- | --- |
-| **Frontend UI** | Streamlit, Gradio, React.js, or Next.js |
-| **Backend Framework** | FastAPI or Flask (Python) |
-| **AI/Agent Orchestration** | LangChain, LlamaIndex, or AutoGen Frameworks |
-| **LLM Engine** | OpenAI API (GPT-4o), Google Gemini, or Ollama (Llama 3 for local execution) |
-| **Vector Database** | ChromaDB, FAISS, Pinecone, or Qdrant |
-| **Database & Auth** | PostgreSQL, SQLite, or Firebase |
+* **Multi-Modal Interaction:** Supports voice inputs, document uploads (e.g., grading feedback or assignments), and text chat
+* 
+🛠️ Technology Stack
+*UI Framework: Streamlit
+*Agent Orchestration: LangGraph, LangChain Core
+*Vector Database: ChromaDB
+*Embeddings: HuggingFace (sentence-transformers/all-MiniLM-L6-v2)
+*LLM Inference: Groq API (llama-3.3-70b-versatile) / Local Ollama (llama3.1)
+*Persistence: SQLite3
 
 ---
 
