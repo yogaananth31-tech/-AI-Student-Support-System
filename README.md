@@ -6,12 +6,17 @@ The AI-Driven Student Support Assistant is an autonomous, context-aware AI appli
 Instead of relying on rigid, hardcoded rules, this system utilizes a LangGraph ReAct agent alongside a Retrieval-Augmented Generation (RAG) pipeline. It dynamically queries a local vector database of university PDFs only when necessary, while maintaining persistent, multi-turn conversational memory via a local SQLite database.
 
 ✨ Key Features
-Agentic Reasoning: Powered by LangGraph's create_react_agent, the system autonomously decides whether to retrieve external documents or rely on conversational context to answer a query.
-Persistent Stateful Memory: Utilizes LangGraph's SqliteSaver checkpointer tied to unique thread_id sessions. Conversations are saved across reloads without manual array passing or context-window overflow.
-Source-Grounded RAG Pipeline: Embeds and chunks institutional PDFs using HuggingFace all-MiniLM-L6-v2 and ChromaDB, ensuring the AI only answers based on verified university documents.
+Agentic Reasoning: 
+Powered by LangGraph's create_react_agent, the system autonomously decides whether to retrieve external documents or rely on conversational context to answer a query.
+Persistent Stateful Memory: 
+Utilizes LangGraph's SqliteSaver checkpointer tied to unique thread_id sessions. Conversations are saved across reloads without manual array passing or context-window overflow.
+Source-Grounded RAG Pipeline: 
+Embeds and chunks institutional PDFs using HuggingFace all-MiniLM-L6-v2 and ChromaDB, ensuring the AI only answers based on verified university documents.
 Hybrid Cloud/Local Inference: Defaults to Groq's lightning-fast Llama 3.3 70B API for high-performance reasoning, with built-in codebase support to seamlessly swap to local, offline inference via Ollama.
-Streamlit Interface: A clean, responsive chat interface featuring one-click Session ID generation for starting fresh conversation threads.
+Streamlit Interface: 
+A clean, responsive chat interface featuring one-click Session ID generation for starting fresh conversation threads.
 🛠️ Technology Stack
+
 UI Framework: Streamlit
 Agent Orchestration: LangGraph, LangChain Core
 Vector Database: ChromaDB
@@ -19,6 +24,7 @@ Embeddings: HuggingFace (sentence-transformers/all-MiniLM-L6-v2)
 LLM Inference: Groq API (llama-3.3-70b-versatile) / Local Ollama (llama3.1)
 Persistence: SQLite3
 📂 Project Structure
+
 ai-student-support-agent/
 │
 ├── data/                    # Drop your university PDF documents here
